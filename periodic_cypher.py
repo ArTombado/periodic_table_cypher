@@ -7,7 +7,7 @@ new_text = ""
 while( text != "" ):
 	if( text[0] == " " ):
 		# "/" will space the words
-		new_text += "/"
+		new_text += "/ "
 		text = text[1:]
 	elif( ELEMENTS.get(text[0]) ):
 		# get an equivalent element for each letter
@@ -19,7 +19,7 @@ while( text != "" ):
                 text = text[2:]
 	else:
 		# if there is no element equivalent and is not space, then write the letter with parentheses
-		new_text += f"({text[0]})"
+		new_text += f"({text[0]}) "
 		text = text[1:]
 
 print(new_text)
